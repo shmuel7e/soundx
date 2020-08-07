@@ -1,0 +1,8 @@
+.track-list-container {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    & :last-child {
+        border-bottom: thin solid rgba(243, 238, 238, 0.733);
+    }
+}

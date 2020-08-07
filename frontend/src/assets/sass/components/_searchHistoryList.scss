@@ -1,0 +1,31 @@
+.search-history-list-container {
+    color: white;
+    background-color: #17141d;
+    max-width: 30%;
+    min-width: 30%;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    border-radius: 10px;
+    height: 70%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    & :last-child {
+        border-bottom: thin solid rgba(243, 238, 238, 0.733);
+    }
+    @include for-normal-layout {
+        padding-bottom: 300px;
+        margin-bottom: 20px;
+        min-width: 50%;
+        height: 470px;
+    }
+    @media screen and (max-width: 610px) {
+        min-width: 100%;
+    }
+}
+
+.search-history-title {
+    font-family: "my-font";
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,49 @@
+.track-cover-container {
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    background-color: white !important;
+    color: white;
+    height: 70%;
+    min-width: 35%;
+    max-width: 35%;
+    position: relative;
+    @include for-normal-layout {
+        min-width: 50%;
+        min-height: 500px;
+        border-radius: 10px;
+        padding: 10px;
+        padding-bottom: 10px;
+        padding-top: 35px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    @media screen and (max-width: 610px) {
+        min-width: 100%;
+    }
+
+    & div {
+        height: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    & div > img {
+        @include for-normal-layout {
+            width: 90%;
+            height: 400px;
+        }
+        width: 85%;
+        height: 85%;
+        cursor: pointer;
+        display: block;
+        border-radius: 10px;
+        margin: auto;
+    }
+}
+
+.track-embedded {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+}

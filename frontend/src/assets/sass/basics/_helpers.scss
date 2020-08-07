@@ -1,0 +1,108 @@
+// Font Sizes
+.fs12 {
+  font-size: rem(12px);
+}
+.fs14 {
+  font-size: rem(14px);
+}
+.fs18 {
+  font-size: rem(18px);
+}
+.fs20 {
+  font-size: rem(20px);
+}
+.fs24 {
+  font-size: rem(24px);
+}
+.fs28 {
+  font-size: rem(28px);
+}
+.fs30 {
+  font-size: rem(30px);
+}
+
+// flex helpers
+
+.flex {
+  display: flex;
+
+  > *.full {
+    flex: 1;
+  }
+  &.column {
+    flex-direction: column;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.align-center {
+    align-items: center;
+  }
+  &.align-start {
+    align-items: flex-start;
+  }
+  &.align-end {
+    align-items: flex-end;
+  }
+  &.row {
+    flex-direction: row;
+  }
+  &.justify-between {
+    justify-content: space-between;
+  }
+
+  &.justify-around {
+    justify-content: space-around;
+  }
+  &.nowrap {
+    flex-wrap: nowrap;
+  }
+}
+
+// Media helpers
+
+.square-ratio {
+  @include aspect-ratio(1, 1);
+}
+
+// parallax
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// etc
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.margin_lft_rgt {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.fadeOut {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition: width 0.3s 0.3s, height 0.3s 0.3s, opacity 0.3s;
+}
+.fadeIn {
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+  transition: width 0.3s, height 0.3s, opacity 0.3s 0.3s;
+}

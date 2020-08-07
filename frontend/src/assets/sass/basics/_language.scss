@@ -1,0 +1,26 @@
+.he {
+    direction: rtl;
+}
+
+.en {
+    direction: ltr;
+}
+
+.language-select {
+    user-select: none;
+    color: black;
+    cursor: pointer;
+}
+
+.hebrew,
+.english {
+    &:hover {
+        color: #c21d3e9e;
+    }
+}
+
+.language-not-sticky {
+    position: absolute;
+    left: 18px;
+    top: 149px;
+}

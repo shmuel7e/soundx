@@ -1,0 +1,30 @@
+// Setup //
+@import "setup/variables.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+
+// Basics //
+@import "basics/helpers.scss";
+@import "basics/base.scss";
+@import "basics/links.scss";
+@import "basics/buttons.scss";
+@import "basics/typography.scss";
+@import "basics/icons.scss";
+@import "basics/layout.scss";
+@import "basics/animations.scss";
+@import "basics/burger.scss";
+@import "basics/language.scss";
+
+// pages //
+@import "pages/home.scss";
+
+// components//
+@import "components/trackSearch.scss";
+@import "components/trackPlayer.scss";
+@import "components/searchHistoryList.scss";
+@import "components/trackList.scss";
+@import "components/trackPreview.scss";
+@import "components/trackGridPreview.scss";
+@import "components/trackImageGrid.scss";
+@import "components/spinner.scss";
+@import "components/historyPreviewItem.scss";
